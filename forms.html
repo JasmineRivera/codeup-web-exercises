@@ -12,25 +12,27 @@
     <label for="password">Password</label>
     <input id="password" name="password" type="password" placeholder="Enter your password">
     <br>
+    <label for="bio">Bio</label>
     <textarea name="Bio" placeholder="Bio"></textarea>
     <br>
-    <h2>How did you hear about us?</h2>
+    <label>
+        <h2 style="color:blue;">How did you hear about us?</h2>
+        <input type="radio" name="Billboard" value="Billboard">Billboard<br>
+        <input type="radio" name="Radio Advertisement" value="Radio Advertisement">Radio Advertisement<br>
+        <input type="radio" name="Internet Advertisement" value="Internet Advertisement">Internet Advertisement<br>
+        <input type="radio" name="Other" value="Other">Other<br>
+    </label>
+        </form>
+    <label for="browser">What browser are you using?</label>
+        <select name="browser" id="browser>
+            <option value="Chrome">Chrome</option>
+        <option value="Explorer">Explorer</option>
+        <option value="Firefox">Firefox</option>
+        <option value="other">Other</option>
+    </select>
 
-    <input type="radio" name="Billboard" value="Billboard">Billboard<br>
-    <input type="radio" name="Radio Advertisement" value="Radio Advertisement">Radio Advertisement<br>
-    <input type="radio" name="Internet Advertisement" value="Internet Advertisement">Internet Advertisement<br>
-    <input type="radio" name="Other" value="Other">Other<br>
-</form>
-    <h2>What web browser are you using?</h2>
-<select name="web browser">
-    <option value="Chrome">Chrome</option>
-    <option value="Explorer">Explorer</option>
-    <option value="Firefox">Firefox</option>
-    <option value="other">Other</option>
-</select>
+    </form>
+        <button type="submit">Submit the form</button>
 
-</form>
-    <button type="submit">Submit the form</button>
-
-</body>
+    </body>
 </html>
