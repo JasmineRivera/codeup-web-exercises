@@ -1,0 +1,78 @@
+
+ /*Center the main heading */
+
+.fancy-header {
+    color: teal;
+    text-decoration: underline;
+}
+#top { text-align: center; color: teal; }
+
+table, tr, td, th { color: coral; border: 2px teal solid;}
+
+p {color: coral;}
+/*change the color of the headers on page and make them underlined*/
+
+
+h1, h2 {color: lightcoral;
+    text-decoration: underline;}
+
+
+/*change background color of page */
+
+ body {background-color: lavenderblush}
+
+
+
+/*add background image to background and search how to manipulate
+ the position, sizing of image */
+
+body {
+    background-image: url("../imgs/floral.jpeg");
+    background-size: cover;}
+
+
+
+/*change the list style to something other than the default bullet */
+
+
+
+ ol {
+     list-style: circle; }
+  li { color: coral}
+ ul {list-style: circle; }
+
+
+/* change the font of entire page use google fonts*/
+
+
+body { font-family: "fantasy";}
+
+
+/* change table cells td and rows tr padding and font sizes*/
+
+
+.one {margin: 50px auto;
+    width: 500px;
+    padding: 10px;}
+
+
+/* alter the anchor tags and its different states
+(link, visited, hover and active)*/
+
+ a:link {
+     color:aliceblue;}
+
+ a:visited {
+     color:teal;}
+
+ a:hover {
+     color:cornflowerblue;}
+
+ a:active {
+     color:mintcream;}
+
+
+/* continue experimenting to make it pretty*/
+
+
+
