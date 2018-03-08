@@ -1,0 +1,48 @@
+header { text-align: left; color: purple; text-decoration: underline;
+
+}
+div {color: white;
+    font-weight: bold;}
+
+
+#red {width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    background-color: red;}
+
+#orange {width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 30px;
+    background-color: orange;}
+
+#yellow {width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 60px;
+    background-color: yellow;}
+
+#green {width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 90px;
+    background-color: green;}
+
+#blue {width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 120px;
+    background-color: blue;}
+
+#violet {width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 150px;
+    background-color: violet;}
