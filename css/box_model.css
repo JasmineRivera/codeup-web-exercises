@@ -1,18 +1,10 @@
 header { text-align: left; color: purple; text-decoration: underline;
 
 }
-div {color: white;
-    font-weight: bold;}
+div {color: white bold;}
 
 
 #red {width: 150px;
-    height: 50px;
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
-    background-color: red;}
-
-#orange {width: 150px;
     height: 50px;
     border: 1px solid black;
     padding: 10px;
