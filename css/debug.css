@@ -1,0 +1,18 @@
+
+
+
+#pgcol1 {
+   float: left;
+    position: relative;
+    width: 20%;
+}
+
+#pgcol2 {
+    float: right;
+    position: absolute;
+    width: 80%;
+
+
+
+}
+

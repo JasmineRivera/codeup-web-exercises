@@ -45,6 +45,22 @@
     width: 12.5%;
 }
 
+.column.two-thirds {
+    width: 66.66%;
+}
+
+.column.three-eights {
+    width: 37.5%
+}
+
+.column.two-fourths {
+    width: 50%
+}
+
+.column.three-sixths {
+    width: 50%
+}
+
 footer{
     width: 100%;
     margin: 20px 0px;
@@ -56,7 +72,11 @@ footer{
     .column.one-third,
     .column.one-fourth,
     .column.one-sixth,
-    .column.one-eighth {
+    .column.one-eighth,
+    .column.two-thirds,
+    .column.three-eights,
+    .column.three-sixths,
+    .column.two-fourths {
         width: 100%;
     }
 }

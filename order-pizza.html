@@ -2,9 +2,178 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Order Pizza World Online</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-$END$
-</body>
-</html>
+<!--these will go to the bottom-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--navbar below-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Pizza World</a>
+        <nav class="navbar navbar-light bg-light">
+            <form class="form-inline">
+                <button class="btn btn-outline-success" type="button">Order online</button>
+                <button class="btn btn-outline-secondary" type="button">Menu</button>
+            </form>
+        </nav>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Zip code" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search stores near you</button>
+        </form>
+    </nav>
+    <!--nav bar spacing, coloring-->
+<div class="container-fluid">
+    <!--jumbotron below-->
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to Pizza World!</h1>
+        </div>
+    <!--needs to take up 100%, hide on small screens-->
+    <!--h2 under jumbotron-->
+    <h2>Build your own pizza!</h2>
+    <!--nav tabs take 37-->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Size and crust</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Cheese and Sauce</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Toppings</a>
+        </li>
+    </ul>
+    <!--need those number things-->
+    <!--cardddddss :(-->
+    <div class="card1">
+        <div class="card-body">
+            <h5 class="card-title1">Choose size and crust</h5>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Hand tossed</h5>
+                    <p class="card">Garlic-seasoned crust with rich, buttery taste.</p>
+                    <ul class="list-group">
+                        <li class="list-group-item"><div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <input type="radio" aria-label="Radio button for following text input">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Small (10')">
+                        </div></li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                    <!--radio buttons for small (10') and medium (12')-->
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Crunchy thin crust</h5>
+                        <p class="card">Thin enough for the optimum crispy to crunchy ratio.</p>
+                        <!--radio buttons for medium (12') and large (14')-->
+                    </div>
+            </div>
+        </div>
+    </div>
+        <div class="card1">
+            <div class="card-body">
+                <h5 class="card-title1">Choose cheese & sauce</h5>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Cheese?</h5>
+                        <p class="card">Cheese</p>
+                        <!--radio buttons for small (10') and medium (12')-->
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Sauce?</h5>
+                            <p class="card">Sauce</p>
+                            <!--drop down menu for tomato sauce, marinara sauce, BBQ sauce, and Alfredo sauce-->
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">How much?</h5>
+                            <!--drop down menu for light, normal, extra, and double-->
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <div class="card1">
+        <div class="card-body">
+            <h5 class="card-title">Choose toppings</h5>
+               <div class="card">
+                   <div class="card-body">
+                       <h5 class="card-title">Choose meats</h5>
+                       <p class="card">Cheese</p>
+                       <!--check boxes for beef, ham, philly steak, and bacon-->
+                   </div>
+                   <div class="card">
+                       <div class="card-body">
+                           <h5 class="card-title">Choose non-meats</h5>
+                           <p class="card">Sauce</p>
+                           <!--check boxes for green peppers, mushrooms, onions, and jalapeno peppers-->
+                       </div>
+                        </div>
+               </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<button type="button" class="btn btn-info">Info</button>
+        I'll need this for the end of my forms!!-->
+
+
+
+
+
+<!--<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home (crust, sauce, topp)-tab" data-toggle="tab" href="#home(crust,sauce,topp)" role="tab" aria-controls="home" aria-selected="true"
+    span>Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">content calling to</div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+</div>-->
+
+
+
+
+<!--col-sm-12 for full screen-->
+
+
+
+
+
+
+
+
+
+
+

@@ -18,7 +18,7 @@ navbar {
 }
 
 .jumbotron {
-    background-image: url("imgs/pizza.png");
+    background-image: url("../imgs/pizza.png");
 }
 
 .display-4 {
