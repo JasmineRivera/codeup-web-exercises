@@ -1,0 +1,37 @@
+
+
+
+
+navbar {
+    background-color: #E1E1E1;
+
+}
+
+.btn {
+    border: none;
+    color: grey;
+}
+
+
+.btn:hover {
+    background-color: grey;
+}
+
+.jumbotron {
+    background-image: url("imgs/pizza.png");
+}
+
+.display-4 {
+    text-align: center;
+    background-color: rgba(255,255,255,.6);
+}
+
+.card1 {
+    border: 1px solid lightgrey;
+    background-color: lightblue;
+    color: cadetblue;
+}
+
+.card-title {
+    background-color: lightgrey;
+}
