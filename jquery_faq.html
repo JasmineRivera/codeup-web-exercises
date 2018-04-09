@@ -28,8 +28,9 @@
 </head>
 <body>
 <header>
-    <h1>Would you like to sign up for our newsletter?</h1>
-    <span>X</span>
+    <h1 id="lead_form">Register for National Park News</h1>
+    <h1 id="subscribe">Would you like to sign up for our newsletter?</h1>
+    <span id="clickme">X</span>
 </header>
 
 <main class="container">
@@ -79,7 +80,6 @@
         <dt>Can I drive my RV along the Going-to-the-Sun Road?</dt>
         <dd class="invisible">Vehicles, and vehicle combinations, longer than 21 feet (including bumpers) or wider than 8 feet (including mirrors) are prohibited between Avalanche Campground and the Sun Point parking area. You may however, drive to Avalanche if traveling east, and to Sun Point, if traveling west. Vehicles over 10 feet in height may have difficulty driving west from Logan Pass due to rock overhangs. Stock trucks and trailers may access Packers Roost and Siyeh Bend.</dd>
     </dl>
-
     <h3 id="national-parks-heading">National Parks</h3>
     <ul id="national-parks">
         <li>Arches</li>
@@ -88,7 +88,7 @@
         <li>Denali</li>
         <li>Everglades</li>
     </ul>
-    <h3>State Parks of Texas</h3>
+    <h3 id="st-parks-toggle">State Parks of Texas</h3>
     <ul id="state-parks-texas">
         <li>Abilene</li>
         <li>Big Bend</li>
@@ -96,7 +96,7 @@
         <li>Davis Mountains</li>
         <li>Enchanted Rock</li>
     </ul>
-    <h3>Amusement Parks</h3>
+    <h3 id="am-parks-toggle">Amusement Parks</h3>
     <ul id="amusement-parks">
         <li>Disney World</li>
         <li>6 Flags Over Texas</li>
@@ -113,9 +113,29 @@
     // Add a class to all dd elements named invisible.
     // Create CSS that sets elements with the invisible class to display: none.
     // Update the page with jQuery to add a link that toggles the class invisible on and off for all dd elements.
-    $("button").click(function() {
+    $("#button").click(function() {
         $("dd").toggleClass('invisible');
     });
+    $("#li1").click(function() {
+        $("ul").each(function(index, element) {
+            $(element).children().last().toggleClass('highlight');
+        });
+    });
+    $("#li2").click(function() {
+        $("ul").each(function(index, element) {
+            $(this).children().last().toggleClass('highlight');
+        });
+    });
+    //When any h3 is clicked,
+    // the lis underneath it should be bolded. Use font-weight: bold to achieve this.
+    $("h3").click(function() {
+        $(this).next().children().css('font-weight', 'bold');
+    });
+    // When any list item is clicked, first li of the parent ul should have a font color of blue.
+    $("li").click(function() {
+        $(this).parent().children().first().css('color', 'blue');
+    });
+
     // Bonus
     // When any one dt is clicked, the element that was clicked should be highlighted.
     $("dt").click(function() {
@@ -123,6 +143,33 @@
         // show this particular definition
         $(this).next().toggleClass('invisible');
     });
+
+    $('#clickme').click(function () {
+        $('#subscribe').hide("slow", function () {
+            alert('aww okay :(');
+
+        });
+    });
+
+
+    // $('#national-parks-heading').click(function() {
+    //     $('#national-parks').slideToggle();
+    // });
+    // $('#st-parks-toggle').click(function() {
+    //     $('#state-parks-texas').slideToggle();
+    // });
+    // $('#am-parks-toggle').click(function() {
+    //     $('#amusement-parks').slideToggle();
+    // });
+    //
+    //
+    //     // Hide the div
+    //     $("#lead_form").hide();
+    //
+    //     // Show the div in 5s
+    //     $("#lead_form").delay(8000).fadeIn(500);
+
+
 </script>
 </body>
 
