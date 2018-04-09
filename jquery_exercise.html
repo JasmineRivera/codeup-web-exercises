@@ -7,7 +7,7 @@
 <body>
     <h1>Here's a Header</h1>
     <div id="div">
-        <p class="para">Actually squid coloring book raclette truffaut,
+        <p class="codeup">Actually squid coloring book raclette truffaut,
             selvage kickstarter blog poutine flexitarian ugh deserunt ex.
             8-bit esse nisi, cred lumbersexual in fixie seitan tacos before
             they sold out hell of enim farm-to-table. Etsy palo santo pickled
@@ -19,14 +19,41 @@
             irure affogato forage proident. Lyft typewriter disrupt banjo nulla
             paleo fashion axe plaid bespoke labore.</p>
         <ul id="list">
-            <li class="first">list item 1</li>
+            <li class="codeup">list item 1</li>
             <li>list item 2</li>
             <li id="third">list item 3</li>
-            <li class="fourth">list item 4</li>
+            <li class="codeup">list item 4</li>
         </ul>
     </div>
     <!--JS Library and Custom JS Below-->
     <script src="js/jquery-2.2.4.js"></script>
     <script src="js/jquery_js.js"></script>
+    <script>
+        // change background color of an h1 when clicked
+        $("h1").click(function(event) {
+            // $(this).css('background-color', 'cyan');
+            $(event.target).css('background-color', 'cyan');
+        });
+        // make all p tags have font-size 18 when doubleClicked
+        var paragraphs = $("p");
+        paragraphs.dblclick(function(e) {
+            paragraphs.css("font-size", 24);
+        });
+        // set all li text color to red when the mouse is hovering over, reset to black text when there's no more hover
+        $("li").hover(
+            function(event) {
+                $("li").css("color", "red");
+            },
+            function(event) {
+                $("li").css("color", "black");
+            }
+        );
+        $("h1").click(function(event) {
+            $(event.target).toggleClass("highlight");
+        });
+
+
+
+    </script>
 </body>
 </html>
