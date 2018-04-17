@@ -28,9 +28,11 @@
 </head>
 <body>
 <header>
-    <h1 id="lead_form">Register for National Park News</h1>
-    <h1 id="subscribe">Would you like to sign up for our newsletter?</h1>
-    <span id="clickme">X</span>
+    <h1 id="lead_form">Would you like to Register for National Park News?</h1>
+   <div id="subscribe">
+       <h1>Would you like to sign up for our newsletter?</h1>
+        <span id="clickme">X</span>
+   </div>
 </header>
 
 <main class="container">
@@ -113,7 +115,7 @@
     // Add a class to all dd elements named invisible.
     // Create CSS that sets elements with the invisible class to display: none.
     // Update the page with jQuery to add a link that toggles the class invisible on and off for all dd elements.
-    $("#button").click(function() {
+    $("button").click(function() {
         $("dd").toggleClass('invisible');
     });
     $("#li1").click(function() {
@@ -133,11 +135,13 @@
     });
     // When any list item is clicked, first li of the parent ul should have a font color of blue.
     $("li").click(function() {
+        $(this).parent().children().last().css('background-color', 'yellow');
+    });
+    //When any list item is clicked, first li of the parent ul should have a font color of blue.
+    $("li").click(function() {
         $(this).parent().children().first().css('color', 'blue');
     });
 
-    // Bonus
-    // When any one dt is clicked, the element that was clicked should be highlighted.
     $("dt").click(function() {
         $(this).addClass('highlight');
         // show this particular definition
@@ -152,22 +156,22 @@
     });
 
 
-    // $('#national-parks-heading').click(function() {
-    //     $('#national-parks').slideToggle();
-    // });
-    // $('#st-parks-toggle').click(function() {
-    //     $('#state-parks-texas').slideToggle();
-    // });
-    // $('#am-parks-toggle').click(function() {
-    //     $('#amusement-parks').slideToggle();
-    // });
-    //
-    //
-    //     // Hide the div
-    //     $("#lead_form").hide();
-    //
-    //     // Show the div in 5s
-    //     $("#lead_form").delay(8000).fadeIn(500);
+    $('#national-parks-heading').click(function() {
+        $('#national-parks').slideToggle();
+    });
+    $('#st-parks-toggle').click(function() {
+        $('#state-parks-texas').slideToggle();
+    });
+    $('#am-parks-toggle').click(function() {
+        $('#amusement-parks').slideToggle();
+    });
+
+
+        // Hide the div
+        $("#lead_form").hide();
+
+        // Show the div in 8s
+        $("#lead_form").delay(8000).fadeIn();
 
 
 </script>

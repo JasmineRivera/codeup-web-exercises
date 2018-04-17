@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>******</title>
+</head>
+<style>
+    #weatherApp {
+        background-color: lightblue;
+    }
+    #weather {
+        background-color: mintcream;
+    }
+</style>
+<body>
+    <div id="weatherApp">
+        <h1>Weather Application</h1>
+        <div id="city">
+            <div id="weather">
+
+            </div>
+
+        </div>
+
+    </div>
+    <input type="text" name="longitude" placeholder="Enter a Longitude">
+    <input type="text" name="latitude" placeholder="Enter a Latitude">
+    <button type="submit">Submit</button>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"
+>
+</script>
+<script>
+    var request = $.get("http://api.openweathermap.org/data/2.5/forecast/daily", {
+        APPID: "8f32c0149a278cdb5f995fbb3d98eba5",
+        lat:    29.423017,
+        lon:   -98.48527,
+        units: "imperial",
+        cnt: 3
+    });
+    request.done(function(response) {
+        response.list.forEach(function(item) {
+            console.log(response);
+            $('#weather').append("<h3>" + item.temp.max + "˚" +
+                "/" + item.temp.min + "˚" + "</h3>" +
+                    "<p>" +"Clouds:" + " " + item.clouds + "%" + "</p>" +
+                    "<p>" + "Humidity:" + " " + item.humidity + "</p>" +
+                    "<p>" +  "Wind:" + " " + item.wind + "</p>" +
+                    "<p>" + "Pressure:" + " " + item.pressure  + "</p>");
+            });
+    });
+</script>
+</body>
+</html>
